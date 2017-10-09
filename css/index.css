@@ -1,0 +1,178 @@
+.header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.header .row {
+  height: 100%;
+  text-align: center;
+}
+.header .row > div:nth-of-type(-n+3) {
+  border-right: 1px solid #ccc;
+}
+.header .row > div:nth-of-type(-n+3) > .code {
+  position: relative;
+  display: block;
+}
+.header .row > div:nth-of-type(-n+3) > .code > img {
+  display: none;
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.header .row > div:nth-of-type(-n+3) > .code:hover > img {
+  display: block;
+  z-index: 9999;
+}
+.header .row .btn {
+  padding: 3px 15px;
+}
+.header .row .btn-danger {
+  background-color: #e92322;
+  border-color: #e92322;
+}
+.header .row .btn-link {
+  color: #333;
+}
+.header .row .btn-link:hover {
+  text-decoration: none;
+}
+.wjs_nav.navbar {
+  width: 100%;
+  margin-bottom: 0;
+}
+.wjs_nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-brand > .wjs_icon {
+  font-size: 40px;
+}
+.wjs_nav .navbar-brand > .wjs_icon_logo {
+  color: #e92322;
+}
+.wjs_nav .navbar-brand > .wjs_icon_text {
+  color: #333;
+}
+.wjs_nav .navbar-nav > li > a {
+  line-height: 50px;
+  font-size: 16px;
+}
+.wjs_nav .navbar-nav > li > a:hover,
+.wjs_nav .navbar-nav > li a:focus {
+  color: #777;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_nav .navbar-nav .active > a,
+.wjs_nav .navbar-nav .active a:hover,
+.wjs_nav .navbar-nav .active a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_nav .navbar-toggle {
+  margin-top: 23px;
+}
+.info {
+  padding: 30px;
+}
+.info .wjs_icon {
+  font-size: 30px;
+}
+.info .row > div {
+  margin-top: 20px;
+}
+.info .row > div > a:hover {
+  color: #e92322;
+}
+.reverse {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.reverse .row .reverse_now {
+  color: #e92322;
+}
+.reverse .row a:hover {
+  color: #e92322;
+}
+.reverse .row .wjs_icon {
+  font-size: 18px;
+}
+.product {
+  height: 500px;
+  clear: both;
+  background: #eee;
+  padding: 20px;
+}
+.product .tabs-parent {
+  width: 100%;
+  overflow: hidden;
+}
+.product .tabs-parent .nav-tabs > li {
+  border-bottom: none;
+  padding: 0 15px;
+}
+.product .tabs-parent .nav-tabs > li > a {
+  font-size: 16px;
+  line-height: 50px;
+}
+.product .tabs-parent .nav-tabs > li.active > a,
+.product .tabs-parent .nav-tabs > li.active > a:focus,
+.product .tabs-parent .nav-tabs > li.active > a:hover {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #e92322;
+  font-size: 16px;
+}
+.product .pBox {
+  margin-top: 20px;
+  height: 150px;
+  position: relative;
+}
+.product .pBox > .pbLeft {
+  margin-right: 100px;
+  height: 150px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.product .pBox > .pbLeft > p {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+.product .pBox > .pbLeft .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.product .pBox > .pbLeft .row > div:nth-of-type(even) {
+  text-align: right;
+}
+.product .pBox .pbRight {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  border-left: 1px dashed #ccc;
+  text-align: center;
+  padding-top: 30px;
+}
+.product .pBox .pbRight > b {
+  font-size: 40px;
+  color: #e92322;
+}
+.product .pBox .pbRight > sub {
+  color: #e92322;
+  font-size: 20px;
+}
+.product .pBox .pbRight > p {
+  font-size: 18px;
+}
+.product .pBox.active {
+  background-color: #e92322;
+  color: #fff;
+}
